@@ -1,2 +1,1 @@
-# helpers
-Repo contains files I may need in the future
+A repository for all generic code that I may need in a later project.
