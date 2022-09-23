@@ -1,6 +1,8 @@
 import os
 
-file_path = "Ozark.S01.COMPLETE.720p.NF.WEBRip.x264-GalaxyTV[TGx]/"
+print('Please make sure script file is folder level above video files and all srt file are in the same folder as the videos.')
+file_path = input('Enter folder name:')
+# file_path = "Ozark.S01.COMPLETE.720p.NF.WEBRip.x264-GalaxyTV[TGx]/"
 # print(os.getcwd())
 fileNames = [names for _, __, names in os.walk(file_path)][0]
 srtFiles, vidFiles = fileNames[: len(
