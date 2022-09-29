@@ -1,5 +1,4 @@
 import os
-# import itertools as iter
 
 print('Please make sure script file is folder level above video files and all srt file are in the same folder as the videos.')
 file_path = input('Enter folder name:')
@@ -9,21 +8,15 @@ vidFiles = []
 
 
 def splitFilesInFolderToArray(srt_files=None, vid_files=None):
-    # srt_files, vid_files = srtFiles, vidFiles
     if srt_files is None or vid_files is None:
         return
 
     for el in fileNames:
-        # print(el)
         if el.endswith('.srt'):
             srt_files.append(el)
         else:
             vid_files.append(el)
     return srt_files, vid_files
-
-
-# print(splitFilesInFolderToArray(srtFiles, vidFiles))
-
 
 def renameFiles():
     (srt_Files, vid_Files) = splitFilesInFolderToArray(srtFiles, vidFiles)
